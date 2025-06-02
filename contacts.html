@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .contact-info {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 25px;
+            color: var(--text-dark);
+            font-size: 1.5rem;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-white);
+            font-size: 1.2rem;
+        }
+        
+        .contact-text h4 {
+            margin-bottom: 5px;
+            color: var(--text-dark);
+        }
+        
+        .contact-text p, .contact-text a {
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: var(--primary-gold);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-gold);
+            color: var(--bg-white);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form-container {
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px var(--shadow-light);
+        }
+        
+        .contact-form-container h3 {
+            margin-bottom: 25px;
+            color: var(--text-dark);
+            font-size: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-light);
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-gold);
+            outline: none;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--primary-gold);
+            color: var(--bg-white);
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .submit-btn:hover {
+            background: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(215, 181, 109, 0.4);
+        }
+        
+        .map-container {
+            margin-top: 60px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            height: 400px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BuhLaw</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+998901234567" class="contact-btn">
+                +998 90 123 45 67
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-close-btn" id="mobile-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+        
+        <div class="mobile-contact-info">
+            <h4>Связаться с нами</h4>
+            <div class="mobile-contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+998901234567">+998 90 123 45 67</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@buhlaw.uz">info@buhlaw.uz</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>г. Ташкент, Узбекистан</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="padding: 80px 20px;">
+            <div class="section-container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Свяжитесь с нами</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-medium); font-size: 1.2rem;">
+                    Мы всегда рады ответить на ваши вопросы и обсудить, как можем помочь вашему бизнесу
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Наши контакты</h3>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Адрес</h4>
+                                <p>г. Ташкент, ул. Амира Темура, 15Б</p>
+                                <p>Бизнес-центр "Меркурий", офис 512</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Телефон</h4>
+                                <p><a href="tel:+998901234567">+998 90 123 45 67</a></p>
+                                <p><a href="tel:+998712345678">+998 71 234 56 78</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@buhlaw.uz">info@buhlaw.uz</a></p>
+                                <p><a href="mailto:support@buhlaw.uz">support@buhlaw.uz</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Режим работы</h4>
+                                <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                                <p>Суббота: 9:00 - 15:00</p>
+                                <p>Воскресенье: выходной</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h3>Оставить заявку</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ф.И.О. *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Выберите услугу *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Выберите услугу</option>
+                                    <option value="legal">Юридические услуги</option>
+                                    <option value="accounting">Бухгалтерские услуги</option>
+                                    <option value="consulting">Консалтинг</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" placeholder="Опишите ваш запрос..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47940.928265423066!2d69.20932324643511!3d41.32592555762008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1717467181833!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background-color: var(--bg-light);">
+            <div class="section-container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item" style="margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 10px; color: var(--primary-gold);">Как начать сотрудничество с BuhLaw?</h3>
+                        <p style="color: var(--text-medium); line-height: 1.7;">
+                            Для начала сотрудничества с нами достаточно оставить заявку на сайте или связаться с нами по телефону. Наш менеджер свяжется с вами для обсуждения деталей сотрудничества и подготовки индивидуального предложения.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item" style="margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 10px; color: var(--primary-gold);">Какие документы нужны для регистрации ООО?</h3>
+                        <p style="color: var(--text-medium); line-height: 1.7;">
+                            Для регистрации ООО потребуются паспортные данные учредителей, информация о юридическом адресе, сведения о видах деятельности и размере уставного капитала. Остальные документы мы поможем подготовить в рамках нашего сервиса.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item" style="margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 10px; color: var(--primary-gold);">Сколько стоят ваши услуги?</h3>
+                        <p style="color: var(--text-medium); line-height: 1.7;">
+                            Стоимость услуг зависит от их объема и сложности задач. Мы предлагаем индивидуальный подход к ценообразованию и формируем предложение после детального изучения потребностей клиента. Для получения предварительной оценки свяжитесь с нами.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item" style="margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 10px; color: var(--primary-gold);">Как часто нужно сдавать налоговую отчетность?</h3>
+                        <p style="color: var(--text-medium); line-height: 1.7;">
+                            Периодичность сдачи налоговой отчетности зависит от системы налогообложения и организационно-правовой формы предприятия. В большинстве случаев отчетность сдается ежеквартально и ежегодно. Наши специалисты обеспечат своевременную подготовку и сдачу всех необходимых документов.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 style="margin-bottom: 10px; color: var(--primary-gold);">Обеспечиваете ли вы конфиденциальность информации клиентов?</h3>
+                        <p style="color: var(--text-medium); line-height: 1.7;">
+                            Да, мы гарантируем полную конфиденциальность всей информации, предоставленной нашими клиентами. Мы заключаем соглашение о неразглашении данных и строго соблюдаем его условия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BuhLaw</h4>
+                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p>Работаем для вашего успеха</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@buhlaw.uz</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, Узбекистан</p>
+            </div>
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="services.html">Услуги</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Режим работы</h4>
+                <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                <p>Суббота: 9:00 - 15:00</p>
+                <p>Воскресенье: выходной</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BuhLaw. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const body = document.body;
+
+        function toggleMobileMenu() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        }
+
+        function closeMobileMenu() {
+            mobileMenuToggle.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        mobileNavOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking on a link or close button
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+        
+        // Close button functionality
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+        if (mobileCloseBtn) {
+            mobileCloseBtn.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu on window resize if desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

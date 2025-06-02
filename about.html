@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-intro {
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px var(--shadow-light);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-content {
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-section{
+            padding: 0 20px;
+        }
+        
+        .team-member {
+            background: var(--bg-white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-photo {
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .team-photo img {
+            transform: scale(1.05);
+        }
+        
+        .team-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .team-info h3 {
+            margin-bottom: 5px;
+            color: var(--text-dark);
+        }
+        
+        .team-position {
+            color: var(--primary-gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .team-bio {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-section {
+            background: var(--bg-light);
+            padding: 80px 20px;
+            margin: 60px 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-gold);
+            opacity: 0.2;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            color: var(--text-medium);
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .testimonial-author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .testimonial-author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-author-info h4 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author-company {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+        }
+
+        .values-section{
+            padding: 0 20px;
+        }
+        
+        .value-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-gold);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-card h3 {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .value-card h3 i {
+            color: var(--primary-gold);
+        }
+        
+        .value-card p {
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
+            .about-intro {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BuhLaw</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html" class="active">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="contacts.html" class="contact-btn">
+                +998 90 123 45 67
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-close-btn" id="mobile-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html" class="active">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        
+        <div class="mobile-contact-info">
+            <h4>Связаться с нами</h4>
+            <div class="mobile-contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+998901234567">+998 90 123 45 67</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@buhlaw.uz">info@buhlaw.uz</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>г. Ташкент, Узбекистан</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="padding: 80px 20px;">
+            <div class="section-container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">О компании BuhLaw</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-medium); font-size: 1.2rem;">
+                    Профессиональные юридические и бухгалтерские услуги для бизнеса в Узбекистане
+                </p>
+            </div>
+        </section>
+
+        <div class="section-container">
+            <!-- About Intro -->
+            <div class="about-intro">
+                <div class="about-content">
+                    <h2 style="margin-bottom: 20px;">Наша история</h2>
+                    <p>
+                        BuhLaw — это команда опытных юристов и бухгалтеров, предоставляющих профессиональные услуги бизнесу 
+                        в Узбекистане. Мы начали свою деятельность в 2019 году, и за это время помогли сотням компаний различного 
+                        масштаба решить юридические и финансовые вопросы.
+                    </p>
+                    <p>
+                        Наша миссия — обеспечить надежную правовую и финансовую поддержку бизнеса, позволяющую нашим клиентам 
+                        сконцентрироваться на развитии своего дела. Мы стремимся стать незаменимым партнером для каждого 
+                        предпринимателя, предоставляя услуги высочайшего качества.
+                    </p>
+                    <p>
+                        За годы работы мы накопили богатый опыт в различных отраслях и сформировали команду 
+                        квалифицированных специалистов, способных решать самые сложные задачи.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&h=450&fit=crop" alt="Команда BuhLaw uz">
+                </div>
+            </div>
+
+            <!-- Our Values -->
+            <section class="values-section">
+                <h2 class="section-title">Наши ценности</h2>
+                
+                <div class="value-cards">
+                    <div class="value-card">
+                        <h3><i class="fas fa-handshake"></i> Доверие</h3>
+                        <p>
+                            Мы строим долгосрочные отношения с клиентами на основе взаимного доверия и уважения. 
+                            Конфиденциальность информации — один из наших главных приоритетов.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3><i class="fas fa-award"></i> Профессионализм</h3>
+                        <p>
+                            Наши специалисты постоянно совершенствуют свои знания и навыки, чтобы предоставлять 
+                            услуги на высочайшем уровне в соответствии с современными требованиями.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3><i class="fas fa-users"></i> Ориентация на клиента</h3>
+                        <p>
+                            Мы внимательно изучаем потребности каждого клиента и предлагаем индивидуальные решения, 
+                            которые наилучшим образом соответствуют его бизнес-целям.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3><i class="fas fa-bolt"></i> Эффективность</h3>
+                        <p>
+                            Мы ценим время наших клиентов и стремимся обеспечить максимально быстрое и качественное 
+                            решение поставленных задач, используя современные технологии и методики.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3><i class="fas fa-balance-scale"></i> Честность</h3>
+                        <p>
+                            Мы придерживаемся высоких этических стандартов и всегда действуем в рамках закона, 
+                            предоставляя нашим клиентам только проверенную и достоверную информацию.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3><i class="fas fa-chart-line"></i> Развитие</h3>
+                        <p>
+                            Мы непрерывно совершенствуем наши услуги и методы работы, внедряя инновационные подходы и 
+                            технологии для достижения наилучших результатов.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section" style="margin-top: 80px;">
+                <h2 class="section-title">Наша команда</h2>
+                <p class="section-subtitle">
+                    Профессионалы своего дела, готовые предложить оптимальные решения для вашего бизнеса
+                </p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="Алексей Иванов">
+                        </div>
+                        <div class="team-info">
+                            <h3>Алексей Иванов</h3>
+                            <span class="team-position">Генеральный директор</span>
+                            <p class="team-bio">
+                                Более 15 лет опыта в сфере юридического и финансового консалтинга. Специализируется на стратегическом планировании и развитии бизнеса.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Мария Петрова">
+                        </div>
+                        <div class="team-info">
+                            <h3>Мария Петрова</h3>
+                            <span class="team-position">Главный бухгалтер</span>
+                            <p class="team-bio">
+                                Сертифицированный бухгалтер с 10-летним опытом работы. Эксперт в области налогообложения и финансового планирования.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1542190891-2093d38760f2?w=400&h=500&fit=crop" alt="Дмитрий Сидоров">
+                        </div>
+                        <div class="team-info">
+                            <h3>Дмитрий Сидоров</h3>
+                            <span class="team-position">Ведущий юрист</span>
+                            <p class="team-bio">
+                                Специалист по корпоративному и коммерческому праву с обширным опытом сопровождения сделок и представления интересов клиентов.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&h=500&fit=crop" alt="Анна Смирнова">
+                        </div>
+                        <div class="team-info">
+                            <h3>Анна Смирнова</h3>
+                            <span class="team-position">Консультант по налогам</span>
+                            <p class="team-bio">
+                                Эксперт в области оптимизации налогообложения и планирования финансовой деятельности предприятий различных отраслей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonial-section">
+            <div class="section-container">
+                <h2 class="section-title">Отзывы наших клиентов</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Компания BuhLaw стала для нас настоящим партнером в развитии бизнеса. Благодаря их профессиональной поддержке мы смогли оптимизировать бухгалтерский учет и избежать многих юридических проблем. Особенно ценим их внимательное отношение к деталям и индивидуальный подход.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-image">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Сергей Николаев">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Сергей Николаев</h4>
+                                <span class="testimonial-author-company">Директор, TechSolutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Мы сотрудничаем с BuhLaw уже более трех лет, и за это время не было ни одного случая, когда бы нас подвели. Оперативность, высокий профессионализм и глубокое понимание специфики нашего бизнеса — вот что выделяет эту компанию среди других консалтинговых фирм.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Елена Кузнецова">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Елена Кузнецова</h4>
+                                <span class="testimonial-author-company">Финансовый директор, GreenLife</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Когда мы только начинали свой бизнес, было множество вопросов по юридическому оформлению и налогообложению. Команда BuhLaw помогла нам разобраться во всех тонкостях и выстроить эффективную систему учета. Рекомендую их как надежных и компетентных партнеров.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Артур Мамедов">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Артур Мамедов</h4>
+                                <span class="testimonial-author-company">Основатель, ArtCafe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <div class="stat-label">ГОДА УСПЕШНОЙ РАБОТЫ</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <div class="stat-label">ЮРИДИЧЕСКИЕ КОНСУЛЬТАЦИИ</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <div class="stat-label">ЗАКРЫТЫЕ КЕЙСЫ</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <div class="stat-label">КЛИЕНТОВ ПО БУХГАЛТЕРИИ</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="section-container" style="text-align: center;">
+                <h2 class="section-title">Готовы начать сотрудничество?</h2>
+                <p style="max-width: 700px; margin: 0 auto 30px; color: var(--text-medium); font-size: 1.1rem;">
+                    Свяжитесь с нами сегодня, чтобы получить консультацию и узнать, как мы можем помочь вашему бизнесу развиваться и процветать.
+                </p>
+                <a href="contacts.html" class="cta-button">Связаться с нами</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BuhLaw</h4>
+                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p>Работаем для вашего успеха</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@buhlaw.uz</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, Узбекистан</p>
+            </div>
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="services.html">Услуги</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Режим работы</h4>
+                <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                <p>Суббота: 9:00 - 15:00</p>
+                <p>Воскресенье: выходной</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BuhLaw. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const body = document.body;
+
+        function toggleMobileMenu() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        }
+
+        function closeMobileMenu() {
+            mobileMenuToggle.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        mobileNavOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking on a link or close button
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+        
+        // Close button functionality
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+        if (mobileCloseBtn) {
+            mobileCloseBtn.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu on window resize if desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>

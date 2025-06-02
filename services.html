@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-section {
+            padding: 50px 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .service-section:last-child {
+            border-bottom: none;
+        }
+        
+        .service-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .service-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-list li i {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+            margin-top: 4px;
+        }
+        
+        .service-list li div {
+            flex: 1;
+        }
+        
+        .service-list li h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .service-list li p {
+            color: var(--text-medium);
+        }
+        
+        .service-intro {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .service-intro-content {
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+        
+        .service-intro-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow-light);
+        }
+        
+        .service-intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .service-intro {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BuhLaw</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="contacts.html" class="contact-btn">
+                +998 90 123 45 67
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-close-btn" id="mobile-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html" class="active">Услуги</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        
+        <div class="mobile-contact-info">
+            <h4>Связаться с нами</h4>
+            <div class="mobile-contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+998901234567">+998 90 123 45 67</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@buhlaw.uz">info@buhlaw.uz</a>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>г. Ташкент, Узбекистан</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="padding: 80px 20px;">
+            <div class="section-container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Наши услуги</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-medium); font-size: 1.2rem;">
+                    Мы предлагаем комплексное сопровождение бизнеса в Узбекистане, включая юридические и бухгалтерские услуги, а также экспертные консультации
+                </p>
+            </div>
+        </section>
+
+        <div class="section-container">
+            <!-- Legal Services -->
+            <section id="legal" class="service-section">
+                <h2 class="section-title" style="text-align: left;">Юридические услуги</h2>
+                
+                <div class="service-intro">
+                    <div class="service-intro-content">
+                        <p>
+                            Наша команда опытных юристов предоставляет полный спектр юридических услуг для бизнеса в Узбекистане. 
+                            Мы помогаем предпринимателям и компаниям на всех этапах — от регистрации бизнеса до сопровождения 
+                            сделок и представления интересов в различных инстанциях.
+                        </p>
+                        <p style="margin-top: 15px;">
+                            Доверьте нам юридическую сторону вашего бизнеса, чтобы сосредоточиться на его развитии и увеличении прибыли.
+                        </p>
+                    </div>
+                    <div class="service-intro-image">
+                        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?w=500&h=350&fit=crop" alt="Юридические услуги">
+                    </div>
+                </div>
+                
+                <ul class="service-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Регистрация ООО/ЧП и семейного предприятия</h4>
+                            <p>Полное юридическое сопровождение процесса регистрации компаний различных организационно-правовых форм в Узбекистане.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Регистрация ООО с участием иностранных граждан</h4>
+                            <p>Юридическая помощь в создании компаний с иностранным капиталом, включая оформление всей необходимой документации.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Аккредитация представительств иностранных организаций</h4>
+                            <p>Комплексное сопровождение процесса аккредитации представительств иностранных компаний на территории Узбекистана.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Регистрация Индивидуального Предпринимателя (ЯТТ)</h4>
+                            <p>Подготовка документов и сопровождение процедуры регистрации индивидуального предпринимателя.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Изменение состава учредителей</h4>
+                            <p>Юридическое сопровождение процедуры ввода/вывода учредителей, изменения долей в уставном капитале.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Сопровождение сделок в нотариусе</h4>
+                            <p>Подготовка документов и представление интересов клиента при совершении нотариальных действий.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Консалтинг по различным юридическим вопросам</h4>
+                            <p>Профессиональные юридические консультации по широкому спектру вопросов ведения бизнеса в Узбекистане.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Accounting Services -->
+            <section id="accounting" class="service-section">
+                <h2 class="section-title" style="text-align: left;">Бухгалтерские услуги</h2>
+                
+                <div class="service-intro">
+                    <div class="service-intro-content">
+                        <p>
+                            Профессиональное бухгалтерское сопровождение является основой стабильного 
+                            развития любого бизнеса. Наши специалисты обеспечивают полное ведение 
+                            бухгалтерского учета, подготовку и сдачу всех видов отчетности, а также 
+                            помогают оптимизировать налогообложение в рамках законодательства Узбекистана.
+                        </p>
+                        <p style="margin-top: 15px;">
+                            Мы берем на себя все рутинные процессы, позволяя вам сосредоточиться на 
+                            развитии бизнеса и стратегических задачах.
+                        </p>
+                    </div>
+                    <div class="service-intro-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=350&fit=crop" alt="Бухгалтерские услуги">
+                    </div>
+                </div>
+                
+                <ul class="service-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Ведение бухгалтерского учета для предприятий</h4>
+                            <p>Полное бухгалтерское сопровождение деятельности предприятий разных форм собственности и масштабов.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Подготовка и сдача налоговой отчётности</h4>
+                            <p>Своевременная подготовка и сдача всех форм налоговой отчетности в соответствии с законодательством Узбекистана.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Составление учётной политики предприятия</h4>
+                            <p>Разработка эффективной учетной политики, адаптированной под особенности вашего бизнеса.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Ведение делопроизводства на предприятии</h4>
+                            <p>Организация и поддержание системы документооборота компании, создание необходимых регистров.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Подготовка кадровой документации</h4>
+                            <p>Оформление трудовых отношений с сотрудниками, подготовка необходимых кадровых документов.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Осуществление платежей</h4>
+                            <p>Организация и контроль процессов оплаты счетов, управление платежами компании.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Консалтинг по другим организационным моментам</h4>
+                            <p>Профессиональные консультации по оптимизации финансовых и организационных процессов в компании.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Consulting Services -->
+            <section id="consulting" class="service-section">
+                <h2 class="section-title" style="text-align: left;">Консалтинговые услуги</h2>
+                
+                <div class="service-intro">
+                    <div class="service-intro-content">
+                        <p>
+                            Современный бизнес требует комплексного подхода к решению задач. Мы предлагаем 
+                            профессиональные консультации по вопросам оптимизации бизнес-процессов, 
+                            стратегического планирования и развития, а также по финансовым аспектам 
+                            ведения бизнеса в Узбекистане.
+                        </p>
+                        <p style="margin-top: 15px;">
+                            Наши эксперты помогут разработать и внедрить эффективные стратегии, соответствующие 
+                            вашим бизнес-целям и особенностям рынка.
+                        </p>
+                    </div>
+                    <div class="service-intro-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=350&fit=crop" alt="Консалтинговые услуги">
+                    </div>
+                </div>
+                
+                <ul class="service-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Бизнес-планирование и стратегическое развитие</h4>
+                            <p>Разработка бизнес-планов, стратегий развития и помощь в их реализации для достижения устойчивого роста компании.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Оптимизация налогообложения</h4>
+                            <p>Легальные методы оптимизации налоговой нагрузки предприятия с учетом особенностей законодательства Узбекистана.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Финансовый анализ и планирование</h4>
+                            <p>Комплексный анализ финансового состояния компании, выявление проблемных зон и разработка рекомендаций по улучшению.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Организационное развитие</h4>
+                            <p>Разработка и оптимизация организационной структуры компании, бизнес-процессов и системы управления.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Внешнеэкономическая деятельность</h4>
+                            <p>Консультации по ведению ВЭД, включая оформление документов, сопровождение импортно-экспортных операций.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="section" style="background-color: var(--primary-gold);">
+            <div class="section-container" style="text-align: center;">
+                <h2 style="color: white; margin-bottom: 1.5rem;">Нужна консультация?</h2>
+                <p style="color: white; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Свяжитесь с нами сегодня, чтобы обсудить ваши потребности и узнать, как мы можем помочь вашему бизнесу расти и процветать.
+                </p>
+                <a href="contacts.html" class="cta-button" style="background-color: white; color: var(--primary-gold);">
+                    Связаться с нами
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BuhLaw</h4>
+                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p>Работаем для вашего успеха</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@buhlaw.uz</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, Узбекистан</p>
+            </div>
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="services.html">Услуги</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Режим работы</h4>
+                <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                <p>Суббота: 9:00 - 15:00</p>
+                <p>Воскресенье: выходной</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BuhLaw. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const body = document.body;
+
+        function toggleMobileMenu() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        }
+
+        function closeMobileMenu() {
+            mobileMenuToggle.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        mobileNavOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking on a link or close button
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+        
+        // Close button functionality
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+        if (mobileCloseBtn) {
+            mobileCloseBtn.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu on window resize if desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
