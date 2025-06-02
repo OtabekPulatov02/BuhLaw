@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 
-.mobile-nav-menu li {
+.mobile-nav-menu {
     margin-bottom: 20px;
 }
 
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark);
     font-size: 1.2rem;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 15px 0;
     font-weight: 500;
     transition: all 0.3s ease;
     border-bottom: 1px solid var(--border-light);
