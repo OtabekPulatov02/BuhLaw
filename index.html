@@ -6,18 +6,19 @@
     <title>BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/language-switcher.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">BuhLaw</a>
+            <a href="index.html" class="logo"><img src="images/buhlaw_logo.png" alt="buhlaw-logo"></a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Главная</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="index.html" class="active" data-translate="nav.home">Главная</a></li>
+                    <li><a href="services.html" data-translate="nav.services">Услуги</a></li>
+                    <li><a href="about.html" data-translate="nav.about">О нас</a></li>
+                    <li><a href="contacts.html" data-translate="nav.contacts">Контакты</a></li>
                 </ul>
             </nav>
             <a href="contacts.html" class="contact-btn">
@@ -70,9 +71,9 @@
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-content">
-                    <h1>Нам <span class="highlight">выгодно</span> доверять</h1>
-                    <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане. Сделаем ваш бизнес успешно развивающимся и доступным для каждого предпринимателя.</p>
-                    <a href="contacts.html" class="cta-button">
+                    <h1 data-translate="hero.title"><span class="highlight">Buh-law</span> бухгалтерия на аутсорсе, которой вы можете доверять</h1>
+                    <!-- <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане. Сделаем ваш бизнес успешно развивающимся и доступным для каждого предпринимателя.</p> -->
+                    <a href="contacts.html" class="cta-button" data-translate="hero.cta">
                         Оставить заявку
                     </a>
                 </div>
@@ -85,81 +86,167 @@
         <!-- Services Section Preview -->
         <section class="section">
             <div class="section-container">
-                <h2 class="section-title">Наши услуги</h2>
-                <p class="section-subtitle">Мы предлагаем полный спектр юридических и бухгалтерских услуг для вашего бизнеса</p>
+                <h2 class="section-title" data-translate="services.title">Наши услуги</h2>
+                <p class="section-subtitle" data-translate="services.subtitle">Профессиональное бухгалтерское сопровождение и кадровый учет для вашего бизнеса</p>
                 
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <h3>Юридические услуги</h3>
-                        <p>Профессиональная юридическая поддержка бизнеса на всех этапах его развития. Регистрация компаний, сопровождение сделок, представительство интересов.</p>
-                        <a href="services.html#legal" class="more-link" style="display: block; margin-top: 15px; color: #d7b56d;">Подробнее →</a>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="icon">
                             <i class="fas fa-calculator"></i>
                         </div>
-                        <h3>Бухгалтерские услуги</h3>
-                        <p>Полное бухгалтерское сопровождение бизнеса, подготовка и сдача отчетности, оптимизация налогообложения, ведение учета и консультации.</p>
-                        <a href="services.html#accounting" class="more-link" style="display: block; margin-top: 15px; color: #d7b56d;">Подробнее →</a>
+                        <h3 data-translate="services.accounting.title">Бухгалтерский аутсорсинг</h3>
+                        <p data-translate="services.accounting.description">Полное бухгалтерское сопровождение бизнеса, подготовка и сдача отчетности, оптимизация налогообложения, ведение учета и консультации.</p>
+                        <a href="services.html#accounting" class="more-link" style="display: block; margin-top: 15px; color: #14b8a6;" data-translate="services.accounting.more">Подробнее →</a>
                     </div>
                     
                     <div class="service-card">
                         <div class="icon">
-                            <i class="fas fa-handshake"></i>
+                            <i class="fas fa-users"></i>
                         </div>
-                        <h3>Консалтинг</h3>
-                        <p>Экспертные консультации по ведению бизнеса, финансовому планированию, оптимизации бизнес-процессов и стратегическому развитию.</p>
-                        <a href="services.html#consulting" class="more-link" style="display: block; margin-top: 15px; color: #d7b56d;">Подробнее →</a>
+                        <h3 data-translate="services.hr.title">Кадровый учет</h3>
+                        <p data-translate="services.hr.description">Ведение кадрового делопроизводства, подготовка трудовых договоров, ведение личных дел сотрудников, кадровая отчетность.</p>
+                        <a href="services.html#hr" class="more-link" style="display: block; margin-top: 15px; color: #14b8a6;" data-translate="services.hr.more">Подробнее →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 data-translate="services.additional.title">Дополнительные услуги</h3>
+                        <p data-translate="services.additional.description">Консалтинг, юридическая поддержка, HR-консалтинг, финансовый анализ, поддержка при налоговых проверках.</p>
+                        <a href="services.html#additional" class="more-link" style="display: block; margin-top: 15px; color: #14b8a6;" data-translate="services.additional.more">Подробнее →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Us Preview -->
+        <!-- Our Advantages -->
         <section class="section" style="background-color: var(--bg-light);">
             <div class="section-container">
-                <h2 class="section-title">BuhLaw выбирают за:</h2>
+                <h2 class="section-title" data-translate="advantages.title">Наши преимущества</h2>
                 
                 <div class="about-grid">
                     <div class="feature-card">
                         <div class="icon">
-                            <i class="fas fa-coins"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4>Гибкая ценовая политика</h4>
-                        <p>Выгодные предложения на бухгалтерские и юридические услуги индивидуально для каждой компании.</p>
+                        <h4 data-translate="advantages.experience.title">Опыт во всех сферах</h4>
+                        <p data-translate="advantages.experience.description">Работаем с оптовой торговлей, производством, услугами от малого до крупного бизнеса, включая представительства и иностранные предприятия.</p>
                     </div>
                     
                     <div class="feature-card">
                         <div class="icon">
-                            <i class="fas fa-award"></i>
+                            <i class="fas fa-clock"></i>
                         </div>
-                        <h4>Высокое качество услуг</h4>
-                        <p>Соответствие оказываемых услуг высоким профессиональным стандартам качества.</p>
+                        <h4 data-translate="advantages.timeliness.title">Соблюдение сроков</h4>
+                        <p data-translate="advantages.timeliness.description">Все отчеты сдаем вовремя. Берем полную ответственность за своевременную подачу документов в налоговые органы.</p>
                     </div>
                     
                     <div class="feature-card">
                         <div class="icon">
-                            <i class="fas fa-bolt"></i>
+                            <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h4>Оперативность</h4>
-                        <p>Своевременная техническая поддержка и профессиональные консультации.</p>
+                        <h4 data-translate="advantages.confidentiality.title">Конфиденциальность</h4>
+                        <p data-translate="advantages.confidentiality.description">Гарантируем полную конфиденциальность ваших данных и соблюдение всех требований по защите информации.</p>
                     </div>
                     
                     <div class="feature-card">
                         <div class="icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-language"></i>
                         </div>
-                        <h4>Детальный подход к каждому клиенту</h4>
-                        <p>Высокая квалификация наших специалистов позволяет оперативно оказать комплекс услуг.</p>
+                        <h4 data-translate="advantages.languages.title">Сопровождение на русском и узбекском</h4>
+                        <p data-translate="advantages.languages.description">Обеспечиваем полное сопровождение на русском и узбекском языках для комфортного взаимодействия.</p>
                     </div>
                 </div>
                 
                 <div style="text-align: center; margin-top: 40px;">
-                    <a href="about.html" class="cta-button" style="background-color: transparent; color: #d7b56d; border: 2px solid #d7b56d;">Узнать больше о нас</a>
+                    <a href="about.html" class="cta-button" style="background-color: transparent; border: 2px solid #14b8a6;" data-translate="advantages.learn_more">Узнать больше о нас</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Pain Points -->
+        <section class="section">
+            <div class="section-container">
+                <h2 class="section-title" data-translate="pain_points.title">Решаем ваши проблемы</h2>
+                <p class="section-subtitle" data-translate="pain_points.subtitle">Мы понимаем сложности ведения бизнеса и предлагаем эффективные решения</p>
+                
+                <div class="pain-points-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.late_reports.problem">Опоздание с отчётами и штрафы</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.late_reports.solution">Все отчёты вовремя. Мы берём ответственность за сдачу.</p>
+                    </div>
+                    
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.expensive_accountant.problem">Дорогой штатный бухгалтер</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.expensive_accountant.solution">Вы платите только за объём работы, без окладов и отпусков.</p>
+                    </div>
+                    
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.sick_accountant.problem">Бухгалтер заболел/уволился</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.sick_accountant.solution">Замена специалиста за 2–3 дня, без потерь данных.</p>
+                    </div>
+                    
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.paper_chaos.problem">Хаос в бумагах</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.paper_chaos.solution">Наводим порядок в кадровых документах и бухгалтерии.</p>
+                    </div>
+                    
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.complex_taxes.problem">Сложные и непонятные налоги</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.complex_taxes.solution">Консультации и оптимизация налогов.</p>
+                    </div>
+                    
+                    <div class="pain-point-card" style="background: var(--bg-white); padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light); border-left: 4px solid #ff6b6b;">
+                        <h4 style="color: #ff6b6b; margin-bottom: 1rem;" data-translate="pain_points.need_advisor.problem">Нужен не только бухгалтер, а советник</h4>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;" data-translate="pain_points.need_advisor.solution">Финансовый и HR-консалтинг. Все внешние коммуникации берем на себя.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work -->
+        <section class="section" style="background-color: var(--bg-light);">
+            <div class="section-container">
+                <h2 class="section-title" data-translate="how_we_work.title">Как мы работаем</h2>
+                <p class="section-subtitle" data-translate="how_we_work.subtitle">Простой и понятный процесс сотрудничества в 3 шага</p>
+                
+                <div class="work-steps" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="step-card" style="text-align: center; padding: 2rem; background: var(--bg-white); border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light);">
+                        <div class="step-number" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem; font-weight: bold;">1</div>
+                        <h3 style="margin-bottom: 1rem; color: var(--text-dark);" data-translate="how_we_work.step1.title">Заявка</h3>
+                        <p style="color: var(--text-medium);" data-translate="how_we_work.step1.description">Оставляете заявку на сайте или звоните нам. Обсуждаем ваши потребности и подбираем оптимальное решение.</p>
+                    </div>
+                    
+                    <div class="step-card" style="text-align: center; padding: 2rem; background: var(--bg-white); border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light);">
+                        <div class="step-number" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem; font-weight: bold;">2</div>
+                        <h3 style="margin-bottom: 1rem; color: var(--text-dark);" data-translate="how_we_work.step2.title">Договор</h3>
+                        <p style="color: var(--text-medium);" data-translate="how_we_work.step2.description">Заключаем договор с четким описанием услуг, сроков и стоимости. Начинаем работу с вашими документами.</p>
+                    </div>
+                    
+                    <div class="step-card" style="text-align: center; padding: 2rem; background: var(--bg-white); border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-light);">
+                        <div class="step-number" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem; font-weight: bold;">3</div>
+                        <h3 style="margin-bottom: 1rem; color: var(--text-dark);" data-translate="how_we_work.step3.title">Ведение учёта</h3>
+                        <p style="color: var(--text-medium);" data-translate="how_we_work.step3.description">Ведем полный бухгалтерский и кадровый учет, сдаем отчетность вовремя, консультируем по всем вопросам.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-dark);" data-translate="how_we_work.contact_us">Свяжитесь с нами удобным способом</h3>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <a href="tel:+998901234567" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; background: var(--primary-teal); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                            <i class="fas fa-phone"></i> +998 90 123 45 67
+                        </a>
+                        <a href="https://t.me/buhlaw_uz" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; background: #0088cc; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/998901234567" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; background: #25d366; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:info@buhlaw.uz" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; background: var(--primary-blue); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,19 +256,19 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <span class="stat-number">5+</span>
-                    <div class="stat-label">ГОДА УСПЕШНОЙ РАБОТЫ</div>
+                    <div class="stat-label" data-translate="stats.years">ГОДА УСПЕШНОЙ РАБОТЫ</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">200+</span>
-                    <div class="stat-label">ЮРИДИЧЕСКИЕ КОНСУЛЬТАЦИИ</div>
+                    <div class="stat-label" data-translate="stats.consultations">ЮРИДИЧЕСКИЕ КОНСУЛЬТАЦИИ</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">150+</span>
-                    <div class="stat-label">ЗАКРЫТЫЕ КЕЙСЫ</div>
+                    <div class="stat-label" data-translate="stats.cases">ЗАКРЫТЫЕ КЕЙСЫ</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">100+</span>
-                    <div class="stat-label">КЛИЕНТОВ ПО БУХГАЛТЕРИИ</div>
+                    <div class="stat-label" data-translate="stats.clients">КЛИЕНТОВ ПО БУХГАЛТЕРИИ</div>
                 </div>
             </div>
         </section>
@@ -192,31 +279,31 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>BuhLaw</h4>
-                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
-                <p>Работаем для вашего успеха</p>
+                <p data-translate="footer.description">Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p data-translate="footer.motto">Работаем для вашего успеха</p>
             </div>
             <div class="footer-section">
-                <h4>Контакты</h4>
+                <h4 data-translate="footer.contacts">Контакты</h4>
                 <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
                 <p><i class="fas fa-envelope"></i> info@buhlaw.uz</p>
                 <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, Узбекистан</p>
             </div>
             <div class="footer-section">
-                <h4>Навигация</h4>
-                <p><a href="index.html">Главная</a></p>
-                <p><a href="services.html">Услуги</a></p>
-                <p><a href="about.html">О нас</a></p>
-                <p><a href="contacts.html">Контакты</a></p>
+                <h4 data-translate="footer.navigation">Навигация</h4>
+                <p><a href="index.html" data-translate="nav.home">Главная</a></p>
+                <p><a href="services.html" data-translate="nav.services">Услуги</a></p>
+                <p><a href="about.html" data-translate="nav.about">О нас</a></p>
+                <p><a href="contacts.html" data-translate="nav.contacts">Контакты</a></p>
             </div>
             <div class="footer-section">
-                <h4>Режим работы</h4>
-                <p>Понедельник - Пятница: 9:00 - 18:00</p>
-                <p>Суббота: 9:00 - 15:00</p>
-                <p>Воскресенье: выходной</p>
+                <h4 data-translate="footer.working_hours">Режим работы</h4>
+                <p data-translate="footer.weekdays">Понедельник - Пятница: 9:00 - 18:00</p>
+                <p data-translate="footer.saturday">Суббота: 9:00 - 15:00</p>
+                <p data-translate="footer.sunday">Воскресенье: выходной</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 BuhLaw. Все права защищены.</p>
+            <p>&copy; 2025 BuhLaw. <span data-translate="footer.copyright">Все права защищены.</span></p>
         </div>
     </footer>
 

@@ -6,6 +6,7 @@
     <title>О нас | BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/language-switcher.js" defer></script>
     <style>
         .about-intro {
             padding: 0 20px;
@@ -13,7 +14,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
-            margin-bottom: 50px;
+            margin: 50px 0;
         }
         
         .about-image {
@@ -45,7 +46,7 @@
         }
 
         .team-section{
-            padding: 0 20px;
+            padding: 50px 20px;
         }
         
         .team-member {
@@ -87,7 +88,7 @@
         }
         
         .team-position {
-            color: var(--primary-gold);
+            color: var(--primary-teal);
             font-weight: 600;
             margin-bottom: 10px;
             display: block;
@@ -127,8 +128,8 @@
             top: 20px;
             left: 20px;
             font-size: 5rem;
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-gold);
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-teal);
             opacity: 0.2;
             line-height: 1;
         }
@@ -167,7 +168,7 @@
         }
         
         .testimonial-author-company {
-            color: var(--primary-gold);
+            color: var(--primary-teal);
             font-size: 0.9rem;
         }
 
@@ -188,7 +189,7 @@
             border-radius: 10px;
             box-shadow: 0 10px 30px var(--shadow-light);
             transition: all 0.3s ease;
-            border-top: 4px solid var(--primary-gold);
+            border-top: 4px solid var(--primary-teal);
         }
         
         .value-card:hover {
@@ -203,7 +204,7 @@
         }
         
         .value-card h3 i {
-            color: var(--primary-gold);
+            color: var(--primary-teal);
         }
         
         .value-card p {
@@ -226,13 +227,13 @@
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">BuhLaw</a>
+            <a href="index.html" class="logo"><img src="images/buhlaw_logo.png" alt="buhlaw-logo"></a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="about.html" class="active">О нас</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="index.html" data-translate="nav.home">Главная</a></li>
+                    <li><a href="services.html" data-translate="nav.services">Услуги</a></li>
+                    <li><a href="about.html" class="active" data-translate="nav.about">О нас</a></li>
+                    <li><a href="contacts.html" data-translate="nav.contacts">Контакты</a></li>
                 </ul>
             </nav>
             <a href="contacts.html" class="contact-btn">
@@ -284,10 +285,10 @@
         <!-- Page Header -->
         <section class="hero" style="padding: 80px 20px;">
             <div class="section-container" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">О компании BuhLaw</h1>
-                <p style="max-width: 700px; margin: 0 auto; color: var(--text-medium); font-size: 1.2rem;">
-                    Профессиональные юридические и бухгалтерские услуги для бизнеса в Узбекистане
-                </p>
+            <h1 class="section-container__h1" style="font-size: 3rem; margin-bottom: 1.5rem;" data-translate="about.title">О компании BuhLaw</h1>
+            <p class="section-container__p" style="max-width: 700px; margin: 0 auto; font-size: 1.2rem;" data-translate="about.subtitle">
+                Профессиональные юридические и бухгалтерские услуги для бизнеса в Узбекистане
+            </p>
             </div>
         </section>
 
@@ -295,18 +296,18 @@
             <!-- About Intro -->
             <div class="about-intro">
                 <div class="about-content">
-                    <h2 style="margin-bottom: 20px;">Наша история</h2>
-                    <p>
+                    <h2 style="margin-bottom: 20px;" data-translate="about.history.title">Наша история</h2>
+                    <p data-translate="about.history.text1">
                         BuhLaw — это команда опытных юристов и бухгалтеров, предоставляющих профессиональные услуги бизнесу 
                         в Узбекистане. Мы начали свою деятельность в 2019 году, и за это время помогли сотням компаний различного 
                         масштаба решить юридические и финансовые вопросы.
                     </p>
-                    <p>
+                    <p data-translate="about.history.text2">
                         Наша миссия — обеспечить надежную правовую и финансовую поддержку бизнеса, позволяющую нашим клиентам 
                         сконцентрироваться на развитии своего дела. Мы стремимся стать незаменимым партнером для каждого 
                         предпринимателя, предоставляя услуги высочайшего качества.
                     </p>
-                    <p>
+                    <p data-translate="about.history.text3">
                         За годы работы мы накопили богатый опыт в различных отраслях и сформировали команду 
                         квалифицированных специалистов, способных решать самые сложные задачи.
                     </p>
@@ -318,52 +319,52 @@
 
             <!-- Our Values -->
             <section class="values-section">
-                <h2 class="section-title">Наши ценности</h2>
+                <h2 class="section-title" data-translate="about.values.title">Наши ценности</h2>
                 
                 <div class="value-cards">
                     <div class="value-card">
-                        <h3><i class="fas fa-handshake"></i> Доверие</h3>
-                        <p>
+                        <h3><i class="fas fa-handshake"></i> <span data-translate="about.values.trust.title">Доверие</span></h3>
+                        <p data-translate="about.values.trust.description">
                             Мы строим долгосрочные отношения с клиентами на основе взаимного доверия и уважения. 
                             Конфиденциальность информации — один из наших главных приоритетов.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <h3><i class="fas fa-award"></i> Профессионализм</h3>
-                        <p>
+                        <h3><i class="fas fa-award"></i> <span data-translate="about.values.professionalism.title">Профессионализм</span></h3>
+                        <p data-translate="about.values.professionalism.description">
                             Наши специалисты постоянно совершенствуют свои знания и навыки, чтобы предоставлять 
                             услуги на высочайшем уровне в соответствии с современными требованиями.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <h3><i class="fas fa-users"></i> Ориентация на клиента</h3>
-                        <p>
+                        <h3><i class="fas fa-users"></i> <span data-translate="about.values.client_focus.title">Ориентация на клиента</span></h3>
+                        <p data-translate="about.values.client_focus.description">
                             Мы внимательно изучаем потребности каждого клиента и предлагаем индивидуальные решения, 
                             которые наилучшим образом соответствуют его бизнес-целям.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <h3><i class="fas fa-bolt"></i> Эффективность</h3>
-                        <p>
+                        <h3><i class="fas fa-bolt"></i> <span data-translate="about.values.efficiency.title">Эффективность</span></h3>
+                        <p data-translate="about.values.efficiency.description">
                             Мы ценим время наших клиентов и стремимся обеспечить максимально быстрое и качественное 
                             решение поставленных задач, используя современные технологии и методики.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <h3><i class="fas fa-balance-scale"></i> Честность</h3>
-                        <p>
+                        <h3><i class="fas fa-balance-scale"></i> <span data-translate="about.values.honesty.title">Честность</span></h3>
+                        <p data-translate="about.values.honesty.description">
                             Мы придерживаемся высоких этических стандартов и всегда действуем в рамках закона, 
                             предоставляя нашим клиентам только проверенную и достоверную информацию.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <h3><i class="fas fa-chart-line"></i> Развитие</h3>
-                        <p>
+                        <h3><i class="fas fa-chart-line"></i> <span data-translate="about.values.development.title">Развитие</span></h3>
+                        <p data-translate="about.values.development.description">
                             Мы непрерывно совершенствуем наши услуги и методы работы, внедряя инновационные подходы и 
                             технологии для достижения наилучших результатов.
                         </p>
@@ -373,21 +374,21 @@
 
             <!-- Team Section -->
             <section class="team-section" style="margin-top: 80px;">
-                <h2 class="section-title">Наша команда</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title" data-translate="about.team.title">Наша команда</h2>
+                <p class="section-subtitle" data-translate="about.team.subtitle">
                     Профессионалы своего дела, готовые предложить оптимальные решения для вашего бизнеса
                 </p>
                 
-                <div class="team-grid">
+                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="team-member">
                         <div class="team-photo">
                             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="Алексей Иванов">
                         </div>
                         <div class="team-info">
-                            <h3>Алексей Иванов</h3>
-                            <span class="team-position">Генеральный директор</span>
-                            <p class="team-bio">
-                                Более 15 лет опыта в сфере юридического и финансового консалтинга. Специализируется на стратегическом планировании и развитии бизнеса.
+                            <h3 data-translate="about.team.director.name">Алексей Иванов</h3>
+                            <span class="team-position" data-translate="about.team.director.position">Генеральный директор</span>
+                            <p class="team-bio" data-translate="about.team.director.description">
+                                Более 15 лет опыта в сфере бухгалтерского и финансового консалтинга. Специализируется на стратегическом планировании и развитии бизнеса. Под его руководством компания успешно обслуживает более 100 клиентов различных отраслей.
                             </p>
                         </div>
                     </div>
@@ -397,23 +398,10 @@
                             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Мария Петрова">
                         </div>
                         <div class="team-info">
-                            <h3>Мария Петрова</h3>
-                            <span class="team-position">Главный бухгалтер</span>
-                            <p class="team-bio">
+                            <h3 data-translate="about.team.accountant.name">Мария Петрова</h3>
+                            <span class="team-position" data-translate="about.team.accountant.position">Главный бухгалтер</span>
+                            <p class="team-bio" data-translate="about.team.accountant.description">
                                 Сертифицированный бухгалтер с 10-летним опытом работы. Эксперт в области налогообложения и финансового планирования.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="team-member">
-                        <div class="team-photo">
-                            <img src="https://images.unsplash.com/photo-1542190891-2093d38760f2?w=400&h=500&fit=crop" alt="Дмитрий Сидоров">
-                        </div>
-                        <div class="team-info">
-                            <h3>Дмитрий Сидоров</h3>
-                            <span class="team-position">Ведущий юрист</span>
-                            <p class="team-bio">
-                                Специалист по корпоративному и коммерческому праву с обширным опытом сопровождения сделок и представления интересов клиентов.
                             </p>
                         </div>
                     </div>
@@ -423,10 +411,10 @@
                             <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&h=500&fit=crop" alt="Анна Смирнова">
                         </div>
                         <div class="team-info">
-                            <h3>Анна Смирнова</h3>
-                            <span class="team-position">Консультант по налогам</span>
-                            <p class="team-bio">
-                                Эксперт в области оптимизации налогообложения и планирования финансовой деятельности предприятий различных отраслей.
+                            <h3 data-translate="about.team.hr_manager.name">Анна Смирнова</h3>
+                            <span class="team-position" data-translate="about.team.hr_manager.position">HR-менеджер</span>
+                            <p class="team-bio" data-translate="about.team.hr_manager.description">
+                                Специалист по кадровому учету и HR-процессам. Обеспечивает полное кадровое сопровождение клиентов.
                             </p>
                         </div>
                     </div>
@@ -435,7 +423,7 @@
         </div>
 
         <!-- Testimonials Section -->
-        <section class="testimonial-section">
+        <!-- <section class="testimonial-section">
             <div class="section-container">
                 <h2 class="section-title">Отзывы наших клиентов</h2>
                 
@@ -486,7 +474,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Stats Section -->
         <section class="stats">
@@ -513,11 +501,11 @@
         <!-- Call to Action -->
         <section class="section">
             <div class="section-container" style="text-align: center;">
-                <h2 class="section-title">Готовы начать сотрудничество?</h2>
-                <p style="max-width: 700px; margin: 0 auto 30px; color: var(--text-medium); font-size: 1.1rem;">
+                <h2 class="section-title" data-translate="about.cta.title">Готовы начать сотрудничество?</h2>
+                <p style="max-width: 700px; margin: 0 auto 30px; color: var(--text-medium); font-size: 1.1rem;" data-translate="about.cta.subtitle">
                     Свяжитесь с нами сегодня, чтобы получить консультацию и узнать, как мы можем помочь вашему бизнесу развиваться и процветать.
                 </p>
-                <a href="contacts.html" class="cta-button">Связаться с нами</a>
+                <a href="contacts.html" class="cta-button" data-translate="about.cta.button">Связаться с нами</a>
             </div>
         </section>
     </main>
@@ -527,31 +515,31 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>BuhLaw</h4>
-                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
-                <p>Работаем для вашего успеха</p>
+                <p data-translate="footer.description">Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p data-translate="footer.motto">Работаем для вашего успеха</p>
             </div>
             <div class="footer-section">
-                <h4>Контакты</h4>
+                <h4 data-translate="footer.contacts">Контакты</h4>
                 <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
                 <p><i class="fas fa-envelope"></i> info@buhlaw.uz</p>
                 <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, Узбекистан</p>
             </div>
             <div class="footer-section">
-                <h4>Навигация</h4>
-                <p><a href="index.html">Главная</a></p>
-                <p><a href="services.html">Услуги</a></p>
-                <p><a href="about.html">О нас</a></p>
-                <p><a href="contacts.html">Контакты</a></p>
+                <h4 data-translate="footer.navigation">Навигация</h4>
+                <p><a href="index.html" data-translate="nav.home">Главная</a></p>
+                <p><a href="services.html" data-translate="nav.services">Услуги</a></p>
+                <p><a href="about.html" data-translate="nav.about">О нас</a></p>
+                <p><a href="contacts.html" data-translate="nav.contacts">Контакты</a></p>
             </div>
             <div class="footer-section">
-                <h4>Режим работы</h4>
-                <p>Понедельник - Пятница: 9:00 - 18:00</p>
-                <p>Суббота: 9:00 - 15:00</p>
-                <p>Воскресенье: выходной</p>
+                <h4 data-translate="footer.working_hours">Режим работы</h4>
+                <p data-translate="footer.weekdays">Понедельник - Пятница: 9:00 - 18:00</p>
+                <p data-translate="footer.saturday">Суббота: 9:00 - 15:00</p>
+                <p data-translate="footer.sunday">Воскресенье: выходной</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 BuhLaw. Все права защищены.</p>
+            <p>&copy; 2025 BuhLaw. <span data-translate="footer.copyright">Все права защищены.</span></p>
         </div>
     </footer>
 

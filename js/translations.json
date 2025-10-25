@@ -1,0 +1,669 @@
+{
+  "ru": {
+    "nav": {
+      "home": "Главная",
+      "services": "Услуги",
+      "about": "О нас",
+      "contacts": "Контакты"
+    },
+    "hero": {
+      "title": "<span class=\"highlight\">Buh-law</span> бухгалтерия на аутсорсе, которой вы можете доверять",
+      "cta": "Оставить заявку"
+    },
+    "services": {
+      "title": "Наши услуги",
+      "subtitle": "Профессиональное бухгалтерское сопровождение и кадровый учет для вашего бизнеса",
+      "accounting": {
+        "title": "Бухгалтерский аутсорсинг",
+        "description": "Полное бухгалтерское сопровождение бизнеса, подготовка и сдача отчетности, оптимизация налогообложения, ведение учета и консультации.",
+        "more": "Подробнее →"
+      },
+      "hr": {
+        "title": "Кадровый учет",
+        "description": "Ведение кадрового делопроизводства, подготовка трудовых договоров, ведение личных дел сотрудников, кадровая отчетность.",
+        "more": "Подробнее →"
+      },
+      "additional": {
+        "title": "Дополнительные услуги",
+        "description": "Консалтинг, юридическая поддержка, HR-консалтинг, финансовый анализ, поддержка при налоговых проверках.",
+        "more": "Подробнее →"
+      }
+    },
+    "advantages": {
+      "title": "Наши преимущества",
+      "experience": {
+        "title": "Опыт во всех сферах",
+        "description": "Работаем с оптовой торговлей, производством, услугами от малого до крупного бизнеса, включая представительства и иностранные предприятия."
+      },
+      "timeliness": {
+        "title": "Соблюдение сроков",
+        "description": "Все отчеты сдаем вовремя. Берем полную ответственность за своевременную подачу документов в налоговые органы."
+      },
+      "confidentiality": {
+        "title": "Конфиденциальность",
+        "description": "Гарантируем полную конфиденциальность ваших данных и соблюдение всех требований по защите информации."
+      },
+      "languages": {
+        "title": "Сопровождение на русском и узбекском",
+        "description": "Обеспечиваем полное сопровождение на русском и узбекском языках для комфортного взаимодействия."
+      },
+      "learn_more": "Узнать больше о нас"
+    },
+    "pain_points": {
+      "title": "Решаем ваши проблемы",
+      "subtitle": "Мы понимаем сложности ведения бизнеса и предлагаем эффективные решения",
+      "late_reports": {
+        "problem": "Опоздание с отчётами и штрафы",
+        "solution": "Все отчёты вовремя. Мы берём ответственность за сдачу."
+      },
+      "expensive_accountant": {
+        "problem": "Дорогой штатный бухгалтер",
+        "solution": "Вы платите только за объём работы, без окладов и отпусков."
+      },
+      "sick_accountant": {
+        "problem": "Бухгалтер заболел/уволился",
+        "solution": "Замена специалиста за 2–3 дня, без потерь данных."
+      },
+      "paper_chaos": {
+        "problem": "Хаос в бумагах",
+        "solution": "Наводим порядок в кадровых документах и бухгалтерии."
+      },
+      "complex_taxes": {
+        "problem": "Сложные и непонятные налоги",
+        "solution": "Консультации и оптимизация налогов."
+      },
+      "need_advisor": {
+        "problem": "Нужен не только бухгалтер, а советник",
+        "solution": "Финансовый и HR-консалтинг. Все внешние коммуникации берем на себя."
+      }
+    },
+    "how_we_work": {
+      "title": "Как мы работаем",
+      "subtitle": "Простой и понятный процесс сотрудничества в 3 шага",
+      "step1": {
+        "title": "Заявка",
+        "description": "Оставляете заявку на сайте или звоните нам. Обсуждаем ваши потребности и подбираем оптимальное решение."
+      },
+      "step2": {
+        "title": "Договор",
+        "description": "Заключаем договор с четким описанием услуг, сроков и стоимости. Начинаем работу с вашими документами."
+      },
+      "step3": {
+        "title": "Ведение учёта",
+        "description": "Ведем полный бухгалтерский и кадровый учет, сдаем отчетность вовремя, консультируем по всем вопросам."
+      },
+      "contact_us": "Свяжитесь с нами удобным способом"
+    },
+    "stats": {
+      "years": "ГОДА УСПЕШНОЙ РАБОТЫ",
+      "consultations": "ЮРИДИЧЕСКИЕ КОНСУЛЬТАЦИИ",
+      "cases": "ЗАКРЫТЫЕ КЕЙСЫ",
+      "clients": "КЛИЕНТОВ ПО БУХГАЛТЕРИИ"
+    },
+    "footer": {
+      "description": "Профессиональные юридические и бухгалтерские услуги в Узбекистане",
+      "motto": "Работаем для вашего успеха",
+      "contacts": "Контакты",
+      "navigation": "Навигация",
+      "working_hours": "Режим работы",
+      "weekdays": "Понедельник - Пятница: 9:00 - 18:00",
+      "saturday": "Суббота: 9:00 - 15:00",
+      "sunday": "Воскресенье: выходной",
+      "copyright": "Все права защищены."
+    },
+    "about": {
+      "title": "О компании BuhLaw",
+      "subtitle": "Профессиональные юридические и бухгалтерские услуги для бизнеса в Узбекистане",
+      "history": {
+        "title": "Наша история",
+        "text1": "BuhLaw — это команда опытных юристов и бухгалтеров, предоставляющих профессиональные услуги бизнесу в Узбекистане. Мы начали свою деятельность в 2019 году, и за это время помогли сотням компаний различного масштаба решить юридические и финансовые вопросы.",
+        "text2": "Наша миссия — обеспечить надежную правовую и финансовую поддержку бизнеса, позволяющую нашим клиентам сконцентрироваться на развитии своего дела. Мы стремимся стать незаменимым партнером для каждого предпринимателя, предоставляя услуги высочайшего качества.",
+        "text3": "За годы работы мы накопили богатый опыт в различных отраслях и сформировали команду квалифицированных специалистов, способных решать самые сложные задачи."
+      },
+      "values": {
+        "title": "Наши ценности",
+        "trust": {
+          "title": "Доверие",
+          "description": "Мы строим долгосрочные отношения с клиентами на основе взаимного доверия и уважения. Конфиденциальность информации — один из наших главных приоритетов."
+        },
+        "professionalism": {
+          "title": "Профессионализм",
+          "description": "Наши специалисты постоянно совершенствуют свои знания и навыки, чтобы предоставлять услуги на высочайшем уровне в соответствии с современными требованиями."
+        },
+        "client_focus": {
+          "title": "Ориентация на клиента",
+          "description": "Мы внимательно изучаем потребности каждого клиента и предлагаем индивидуальные решения, которые наилучшим образом соответствуют его бизнес-целям."
+        },
+        "efficiency": {
+          "title": "Эффективность",
+          "description": "Мы ценим время наших клиентов и стремимся обеспечить максимально быстрое и качественное решение поставленных задач, используя современные технологии и методики."
+        },
+        "honesty": {
+          "title": "Честность",
+          "description": "Мы придерживаемся высоких этических стандартов и всегда действуем в рамках закона, предоставляя нашим клиентам только проверенную и достоверную информацию."
+        },
+        "development": {
+          "title": "Развитие",
+          "description": "Мы непрерывно совершенствуем наши услуги и методы работы, внедряя инновационные подходы и технологии для достижения наилучших результатов."
+        }
+      },
+      "team": {
+        "title": "Наша команда",
+        "subtitle": "Профессионалы своего дела, готовые предложить оптимальные решения для вашего бизнеса",
+        "director": {
+          "name": "Алексей Иванов",
+          "position": "Генеральный директор",
+          "description": "Более 15 лет опыта в сфере бухгалтерского и финансового консалтинга. Специализируется на стратегическом планировании и развитии бизнеса. Под его руководством компания успешно обслуживает более 100 клиентов различных отраслей."
+        },
+        "accountant": {
+          "name": "Мария Петрова",
+          "position": "Главный бухгалтер",
+          "description": "Сертифицированный бухгалтер с 10-летним опытом работы. Эксперт в области налогообложения и финансового планирования."
+        },
+        "hr_manager": {
+          "name": "Анна Смирнова",
+          "position": "HR-менеджер",
+          "description": "Специалист по кадровому учету и HR-процессам. Обеспечивает полное кадровое сопровождение клиентов."
+        }
+      },
+      "cta": {
+        "title": "Готовы начать сотрудничество?",
+        "subtitle": "Свяжитесь с нами сегодня, чтобы получить консультацию и узнать, как мы можем помочь вашему бизнесу развиваться и процветать.",
+        "button": "Связаться с нами"
+      }
+    },
+    "services": {
+      "page_title": "Наши услуги",
+      "page_subtitle": "Профессиональное бухгалтерское сопровождение и кадровый учет для вашего бизнеса в Узбекистане",
+      "pricing": {
+        "title": "Тарифы на услуги",
+        "subtitle": "Выберите подходящий тариф в зависимости от формы налогообложения и вида деятельности",
+        "basic": {
+          "title": "Налог с оборота",
+          "features": {
+            "accounting": "Ведение бухгалтерского учета",
+            "reports": "Сдача налоговой отчетности",
+            "hr": "Кадровый учет",
+            "consultations": "Консультации по телефону"
+          },
+          "button": "Узнать стоимость"
+        },
+        "popular": {
+          "title": "Налог на прибыль + НДС",
+          "features": {
+            "full_accounting": "Полное бухгалтерское сопровождение",
+            "vat": "Ведение НДС",
+            "hr": "Кадровый учет",
+            "analysis": "Финансовый анализ",
+            "priority": "Приоритетная поддержка"
+          },
+          "button": "Узнать стоимость"
+        },
+        "premium": {
+          "title": "Валютные операции",
+          "features": {
+            "currency_law": "Валютное законодательство",
+            "foreign_trade": "Внешнеэкономическая деятельность",
+            "full_package": "Полный пакет услуг",
+            "personal_manager": "Персональный менеджер",
+            "support_24_7": "24/7 поддержка"
+          },
+          "button": "Узнать стоимость"
+        }
+      },
+      "accounting": {
+        "title": "Бухгалтерский аутсорсинг",
+        "description": "Профессиональное бухгалтерское сопровождение является основой стабильного развития любого бизнеса. Наши специалисты обеспечивают полное ведение бухгалтерского учета, подготовку и сдачу всех видов отчетности, а также помогают оптимизировать налогообложение в рамках законодательства Узбекистана.",
+        "subdescription": "Мы берем на себя все рутинные процессы, позволяя вам сосредоточиться на развитии бизнеса и стратегических задачах.",
+        "features": {
+          "bookkeeping": "Ведение бухгалтерского учета для предприятий",
+          "tax_reports": "Подготовка и сдача налоговой отчётности",
+          "accounting_policy": "Составление учётной политики предприятия",
+          "documentation": "Ведение делопроизводства на предприятии",
+          "payments": "Осуществление платежей"
+        }
+      },
+      "hr": {
+        "title": "Кадровый учет",
+        "description": "Правильное ведение кадрового учета — залог стабильной работы с персоналом и соблюдения трудового законодательства. Мы обеспечиваем полное кадровое сопровождение вашего бизнеса, от найма до увольнения сотрудников.",
+        "subdescription": "Наши специалисты помогут вам избежать штрафов и проблем с трудовой инспекцией.",
+        "features": {
+          "hr_docs": "Подготовка кадровой документации",
+          "personal_files": "Ведение личных дел сотрудников",
+          "hr_reports": "Кадровая отчетность",
+          "labor_law": "Консультации по трудовому праву"
+        }
+      },
+      "additional": {
+        "title": "Дополнительные услуги",
+        "description": "Помимо основных услуг по бухгалтерскому и кадровому учету, мы предоставляем широкий спектр дополнительных услуг для комплексного развития вашего бизнеса.",
+        "subdescription": "Наши эксперты помогут решить любые вопросы, связанные с ведением бизнеса в Узбекистане.",
+        "features": {
+          "legal_support": "Юридическая поддержка",
+          "financial_consulting": "Финансовый консалтинг",
+          "hr_consulting": "HR-консалтинг",
+          "tax_audit_support": "Поддержка при налоговых проверках",
+          "one_time_consultations": "Разовые консультации"
+        }
+      },
+      "cta": {
+        "title": "Нужна консультация?",
+        "subtitle": "Свяжитесь с нами сегодня, чтобы обсудить ваши потребности и узнать, как мы можем помочь вашему бизнесу расти и процветать.",
+        "button": "Связаться с нами"
+      }
+    },
+    "contacts": {
+      "page_title": "Свяжитесь с нами",
+      "page_subtitle": "Мы всегда рады ответить на ваши вопросы и обсудить, как можем помочь вашему бизнесу",
+      "contact_info": {
+        "title": "Наши контакты",
+        "address": {
+          "title": "Адрес",
+          "line1": "г. Ташкент, ул. Амира Темура, 15Б",
+          "line2": "Бизнес-центр \"Меркурий\", офис 512"
+        },
+        "phone": {
+          "title": "Телефон"
+        },
+        "email": {
+          "title": "Email"
+        },
+        "working_hours": {
+          "title": "Режим работы",
+          "weekdays": "Понедельник - Пятница: 9:00 - 18:00",
+          "saturday": "Суббота: 9:00 - 15:00",
+          "sunday": "Воскресенье: выходной"
+        }
+      },
+      "form": {
+        "title": "Оставить заявку",
+        "name": "Ф.И.О. *",
+        "phone": "Телефон *",
+        "email": "Email",
+        "service": "Выберите услугу *",
+        "service_options": {
+          "select": "Выберите услугу",
+          "legal": "Юридические услуги",
+          "accounting": "Бухгалтерские услуги",
+          "consulting": "Консалтинг",
+          "other": "Другое"
+        },
+        "message": "Сообщение",
+        "message_placeholder": "Опишите ваш запрос...",
+        "submit": "Отправить заявку",
+        "success": "Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время."
+      },
+      "faq": {
+        "title": "Часто задаваемые вопросы",
+        "q1": {
+          "question": "Как начать сотрудничество с BuhLaw?",
+          "answer": "Для начала сотрудничества с нами достаточно оставить заявку на сайте или связаться с нами по телефону. Наш менеджер свяжется с вами для обсуждения деталей сотрудничества и подготовки индивидуального предложения."
+        },
+        "q2": {
+          "question": "Какие документы нужны для регистрации ООО?",
+          "answer": "Для регистрации ООО потребуются паспортные данные учредителей, информация о юридическом адресе, сведения о видах деятельности и размере уставного капитала. Остальные документы мы поможем подготовить в рамках нашего сервиса."
+        },
+        "q3": {
+          "question": "Сколько стоят ваши услуги?",
+          "answer": "Стоимость услуг зависит от их объема и сложности задач. Мы предлагаем индивидуальный подход к ценообразованию и формируем предложение после детального изучения потребностей клиента. Для получения предварительной оценки свяжитесь с нами."
+        },
+        "q4": {
+          "question": "Как часто нужно сдавать налоговую отчетность?",
+          "answer": "Периодичность сдачи налоговой отчетности зависит от системы налогообложения и организационно-правовой формы предприятия. В большинстве случаев отчетность сдается ежеквартально и ежегодно. Наши специалисты обеспечат своевременную подготовку и сдачу всех необходимых документов."
+        },
+        "q5": {
+          "question": "Обеспечиваете ли вы конфиденциальность информации клиентов?",
+          "answer": "Да, мы гарантируем полную конфиденциальность всей информации, предоставленной нашими клиентами. Мы заключаем соглашение о неразглашении данных и строго соблюдаем его условия."
+        }
+      }
+    }
+  },
+  "uz": {
+    "nav": {
+      "home": "Bosh sahifa",
+      "services": "Xizmatlar",
+      "about": "Biz haqimizda",
+      "contacts": "Aloqa"
+    },
+    "hero": {
+      "title": "<span class=\"highlight\">Buh-law</span> ishonchli buxgalteriya autsorsing xizmati",
+      "cta": "Ariza qoldirish"
+    },
+    "services": {
+      "title": "Bizning xizmatlar",
+      "subtitle": "Biznesingiz uchun professional buxgalteriya va kadrlar hisobini yuritish",
+      "accounting": {
+        "title": "Buxgalteriya autsorsing",
+        "description": "To'liq buxgalteriya xizmati, hisobot tayyorlash va topshirish, soliq optimallashtirish, hisob-kitob va maslahatlar.",
+        "more": "Batafsil →"
+      },
+      "hr": {
+        "title": "Kadrlar hisobi",
+        "description": "Kadrlar ishlarini yuritish, mehnat shartnomalarini tayyorlash, xodimlar shaxsiy ishlarini yuritish, kadrlar hisoboti.",
+        "more": "Batafsil →"
+      },
+      "additional": {
+        "title": "Qo'shimcha xizmatlar",
+        "description": "Konsalting, yuridik yordam, HR-konsalting, moliyaviy tahlil, soliq tekshiruvlarida yordam.",
+        "more": "Batafsil →"
+      }
+    },
+    "advantages": {
+      "title": "Bizning afzalliklarimiz",
+      "experience": {
+        "title": "Barcha sohalarda tajriba",
+        "description": "Ommaviy savdo, ishlab chiqarish, kichik va katta biznes xizmatlari, shu jumladan vakolatxonalar va xorijiy korxonalar bilan ishlaymiz."
+      },
+      "timeliness": {
+        "title": "Muddatlarni bajarish",
+        "description": "Barcha hisobotlarni o'z vaqtida topshiramiz. Soliq organlariga hujjatlarni o'z vaqtida topshirish uchun to'liq javobgarlikni o'z zimmasiga olamiz."
+      },
+      "confidentiality": {
+        "title": "Maxfiylik",
+        "description": "Ma'lumotlaringizning to'liq maxfiyligini kafolatlaymiz va axborotni himoya qilish bo'yicha barcha talablarni qat'iy bajaramiz."
+      },
+      "languages": {
+        "title": "Rus va o'zbek tillarida xizmat",
+        "description": "Qulay muloqot uchun rus va o'zbek tillarida to'liq xizmat ko'rsatamiz."
+      },
+      "learn_more": "Biz haqimizda ko'proq biling"
+    },
+    "pain_points": {
+      "title": "Muammolaringizni hal qilamiz",
+      "subtitle": "Biznes yuritish qiyinchiliklarini tushunamiz va samarali yechimlar taklif qilamiz",
+      "late_reports": {
+        "problem": "Hisobotlarni kechiktirish va jarimalar",
+        "solution": "Barcha hisobotlarni o'z vaqtida. Topshirish uchun javobgarlikni o'z zimmasiga olamiz."
+      },
+      "expensive_accountant": {
+        "problem": "Qimmat doimiy buxgalter",
+        "solution": "Siz faqat ish hajmi uchun to'laysiz, maosh va ta'tillar yo'q."
+      },
+      "sick_accountant": {
+        "problem": "Buxgalter kasal bo'ldi/ishdan bo'shadi",
+        "solution": "2-3 kun ichida mutaxassis almashtirish, ma'lumotlar yo'qolmasdan."
+      },
+      "paper_chaos": {
+        "problem": "Hujjatlarda tartibsizlik",
+        "solution": "Kadrlar hujjatlarida va buxgalteriyada tartib o'rnatamiz."
+      },
+      "complex_taxes": {
+        "problem": "Murakkab va tushunarsiz soliqlar",
+        "solution": "Maslahatlar va soliqlarni optimallashtirish."
+      },
+      "need_advisor": {
+        "problem": "Nafaqat buxgalter, balki maslahatchi kerak",
+        "solution": "Moliyaviy va HR-konsalting. Barcha tashqi aloqalarni o'z zimmasiga olamiz."
+      }
+    },
+    "how_we_work": {
+      "title": "Qanday ishlaymiz",
+      "subtitle": "Hamkorlikning oddiy va tushunarli jarayoni 3 bosqichda",
+      "step1": {
+        "title": "Ariza",
+        "description": "Saytda ariza qoldiring yoki bizga qo'ng'iroq qiling. Ehtiyojlaringizni muhokama qilamiz va eng yaxshi yechimni tanlaymiz."
+      },
+      "step2": {
+        "title": "Shartnoma",
+        "description": "Xizmatlar, muddatlar va narxlarning aniq tavsifi bilan shartnoma tuzamiz. Hujjatlaringiz bilan ishlashni boshlaymiz."
+      },
+      "step3": {
+        "title": "Hisob-kitob yuritish",
+        "description": "To'liq buxgalteriya va kadrlar hisobini yuritamiz, hisobotlarni o'z vaqtida topshiramiz, barcha savollarga maslahat beramiz."
+      },
+      "contact_us": "Biz bilan qulay usulda bog'laning"
+    },
+    "stats": {
+      "years": "MUVAFFAQIYATLI ISHLASH YILLARI",
+      "consultations": "YURIDIK MASLAHATLAR",
+      "cases": "YOPILGAN ISHLAR",
+      "clients": "BUXGALTERIYA BO'YICHA MIJOZLAR"
+    },
+    "footer": {
+      "description": "O'zbekistonda professional yuridik va buxgalteriya xizmatlari",
+      "motto": "Muvaffaqiyatingiz uchun ishlaymiz",
+      "contacts": "Aloqa",
+      "navigation": "Navigatsiya",
+      "working_hours": "Ish vaqti",
+      "weekdays": "Dushanba - Juma: 9:00 - 18:00",
+      "saturday": "Shanba: 9:00 - 15:00",
+      "sunday": "Yakshanba: dam olish kuni",
+      "copyright": "Barcha huquqlar himoyalangan."
+    },
+    "about": {
+      "title": "BuhLaw kompaniyasi haqida",
+      "subtitle": "O'zbekistonda biznes uchun professional yuridik va buxgalteriya xizmatlari",
+      "history": {
+        "title": "Bizning tariximiz",
+        "text1": "BuhLaw — bu O'zbekistonda biznesga professional xizmatlar ko'rsatadigan tajribali huquqshunoslar va buxgalterlar jamoasi. Biz 2019 yilda faoliyatni boshladik va shu vaqt ichida turli miqyosdagi yuzlab kompaniyalarga yuridik va moliyaviy masalalarni hal qilishda yordam berdik.",
+        "text2": "Bizning missiyamiz — biznes uchun ishonchli huquqiy va moliyaviy qo'llab-quvvatlashni ta'minlash, mijozlarimizga o'z ishlarini rivojlantirishga e'tibor qaratishga imkon berish. Biz har bir tadbirkor uchun ajralmas sherik bo'lishga intilamiz, eng yuqori sifatli xizmatlarni taqdim etamiz.",
+        "text3": "Ish yillarida biz turli sohalarda boy tajriba to'pladik va eng murakkab vazifalarni hal qila oladigan malakali mutaxassislar jamoasini shakllantirdik."
+      },
+      "values": {
+        "title": "Bizning qadriyatlarimiz",
+        "trust": {
+          "title": "Ishonch",
+          "description": "Biz mijozlar bilan o'zaro ishonch va hurmat asosida uzoq muddatli munosabatlarni qurishga intilamiz. Ma'lumotlarning maxfiyligi bizning asosiy ustuvorliklarimizdan biridir."
+        },
+        "professionalism": {
+          "title": "Professionalizm",
+          "description": "Bizning mutaxassislar doimiy ravishda bilim va ko'nikmalarini mukammallashtirib, zamonaviy talablarga muvofiq eng yuqori darajada xizmat ko'rsatish uchun harakat qiladilar."
+        },
+        "client_focus": {
+          "title": "Mijozga yo'naltirilganlik",
+          "description": "Biz har bir mijozning ehtiyojlarini diqqat bilan o'rganamiz va uning biznes maqsadlariga eng mos keladigan individual yechimlarni taklif qilamiz."
+        },
+        "efficiency": {
+          "title": "Samaradorlik",
+          "description": "Biz mijozlarimizning vaqtini qadrlaymiz va zamonaviy texnologiyalar va usullardan foydalangan holda eng tez va sifatli yechimni ta'minlashga intilamiz."
+        },
+        "honesty": {
+          "title": "Halollik",
+          "description": "Biz yuqori axloqiy standartlarga amal qilamiz va doimo qonun doirasida harakat qilib, mijozlarimizga faqat tekshirilgan va ishonchli ma'lumotlarni taqdim etamiz."
+        },
+        "development": {
+          "title": "Rivojlanish",
+          "description": "Biz xizmatlarimiz va ish usullarimizni doimiy ravishda mukammallashtirib, eng yaxshi natijalarga erishish uchun innovatsion yondashuvlar va texnologiyalarni joriy etamiz."
+        }
+      },
+      "team": {
+        "title": "Bizning jamoamiz",
+        "subtitle": "O'z ishining professionalari, sizning biznesingiz uchun eng yaxshi yechimlarni taklif qilishga tayyor",
+        "director": {
+          "name": "Aleksey Ivanov",
+          "position": "Bosh direktor",
+          "description": "Buxgalteriya va moliyaviy konsalting sohasida 15 yildan ortiq tajriba. Strategik rejalashtirish va biznes rivojlantirish bo'yicha ixtisoslashgan. Uning rahbarligida kompaniya turli sohalardan 100 dan ortiq mijozni muvaffaqiyatli xizmat qilmoqda."
+        },
+        "accountant": {
+          "name": "Mariya Petrova",
+          "position": "Bosh buxgalter",
+          "description": "10 yillik ish tajribasiga ega sertifikatlangan buxgalter. Soliqlar va moliyaviy rejalashtirish sohasida ekspert."
+        },
+        "hr_manager": {
+          "name": "Anna Smirnova",
+          "position": "HR-menejer",
+          "description": "Kadrlar hisobi va HR jarayonlari bo'yicha mutaxassis. Mijozlar uchun to'liq kadrlar xizmatini ta'minlaydi."
+        }
+      },
+      "cta": {
+        "title": "Hamkorlikni boshlashga tayyormisiz?",
+        "subtitle": "Bugun biz bilan bog'laning va konsultatsiya oling, biznesingizni rivojlantirish va gullab-yashnashda qanday yordam bera olishimizni biling.",
+        "button": "Biz bilan bog'lanish"
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About Us",
+      "contacts": "Contacts"
+    },
+    "hero": {
+      "title": "<span class=\"highlight\">Buh-law</span> trusted accounting outsourcing service",
+      "cta": "Submit Request"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Professional accounting and HR services for your business",
+      "accounting": {
+        "title": "Accounting Outsourcing",
+        "description": "Complete accounting services, report preparation and submission, tax optimization, bookkeeping and consultations.",
+        "more": "Learn More →"
+      },
+      "hr": {
+        "title": "HR Management",
+        "description": "HR administration, employment contracts preparation, employee records management, HR reporting.",
+        "more": "Learn More →"
+      },
+      "additional": {
+        "title": "Additional Services",
+        "description": "Consulting, legal support, HR consulting, financial analysis, tax audit support.",
+        "more": "Learn More →"
+      }
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "experience": {
+        "title": "Experience in All Sectors",
+        "description": "We work with wholesale trade, manufacturing, services from small to large businesses, including representative offices and foreign enterprises."
+      },
+      "timeliness": {
+        "title": "Timeliness",
+        "description": "We submit all reports on time. We take full responsibility for timely submission of documents to tax authorities."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "We guarantee complete confidentiality of your data and strict compliance with all information protection requirements."
+      },
+      "languages": {
+        "title": "Service in Russian and Uzbek",
+        "description": "We provide full service in Russian and Uzbek languages for comfortable interaction."
+      },
+      "learn_more": "Learn More About Us"
+    },
+    "pain_points": {
+      "title": "We Solve Your Problems",
+      "subtitle": "We understand business challenges and offer effective solutions",
+      "late_reports": {
+        "problem": "Late reports and penalties",
+        "solution": "All reports on time. We take responsibility for submission."
+      },
+      "expensive_accountant": {
+        "problem": "Expensive in-house accountant",
+        "solution": "You pay only for the volume of work, without salaries and vacations."
+      },
+      "sick_accountant": {
+        "problem": "Accountant got sick/quit",
+        "solution": "Specialist replacement in 2-3 days, without data loss."
+      },
+      "paper_chaos": {
+        "problem": "Paper chaos",
+        "solution": "We bring order to HR documents and accounting."
+      },
+      "complex_taxes": {
+        "problem": "Complex and unclear taxes",
+        "solution": "Consultations and tax optimization."
+      },
+      "need_advisor": {
+        "problem": "Need not just an accountant, but an advisor",
+        "solution": "Financial and HR consulting. We handle all external communications."
+      }
+    },
+    "how_we_work": {
+      "title": "How We Work",
+      "subtitle": "Simple and clear cooperation process in 3 steps",
+      "step1": {
+        "title": "Request",
+        "description": "Submit a request on the website or call us. We discuss your needs and select the optimal solution."
+      },
+      "step2": {
+        "title": "Contract",
+        "description": "We conclude a contract with a clear description of services, terms and cost. We start working with your documents."
+      },
+      "step3": {
+        "title": "Bookkeeping",
+        "description": "We maintain complete accounting and HR records, submit reports on time, consult on all issues."
+      },
+      "contact_us": "Contact us conveniently"
+    },
+    "stats": {
+      "years": "YEARS OF SUCCESSFUL WORK",
+      "consultations": "LEGAL CONSULTATIONS",
+      "cases": "CLOSED CASES",
+      "clients": "ACCOUNTING CLIENTS"
+    },
+    "footer": {
+      "description": "Professional legal and accounting services in Uzbekistan",
+      "motto": "Working for your success",
+      "contacts": "Contacts",
+      "navigation": "Navigation",
+      "working_hours": "Working Hours",
+      "weekdays": "Monday - Friday: 9:00 - 18:00",
+      "saturday": "Saturday: 9:00 - 15:00",
+      "sunday": "Sunday: day off",
+      "copyright": "All rights reserved."
+    },
+    "about": {
+      "title": "About BuhLaw Company",
+      "subtitle": "Professional legal and accounting services for business in Uzbekistan",
+      "history": {
+        "title": "Our History",
+        "text1": "BuhLaw is a team of experienced lawyers and accountants providing professional services to businesses in Uzbekistan. We started our activities in 2019, and during this time we have helped hundreds of companies of various scales solve legal and financial issues.",
+        "text2": "Our mission is to provide reliable legal and financial support for business, allowing our clients to focus on developing their business. We strive to become an indispensable partner for every entrepreneur, providing services of the highest quality.",
+        "text3": "Over the years of work, we have accumulated rich experience in various industries and formed a team of qualified specialists capable of solving the most complex tasks."
+      },
+      "values": {
+        "title": "Our Values",
+        "trust": {
+          "title": "Trust",
+          "description": "We build long-term relationships with clients based on mutual trust and respect. Information confidentiality is one of our main priorities."
+        },
+        "professionalism": {
+          "title": "Professionalism",
+          "description": "Our specialists constantly improve their knowledge and skills to provide services at the highest level in accordance with modern requirements."
+        },
+        "client_focus": {
+          "title": "Client Focus",
+          "description": "We carefully study the needs of each client and offer individual solutions that best meet their business goals."
+        },
+        "efficiency": {
+          "title": "Efficiency",
+          "description": "We value our clients' time and strive to provide the fastest and highest quality solution to assigned tasks using modern technologies and methods."
+        },
+        "honesty": {
+          "title": "Honesty",
+          "description": "We adhere to high ethical standards and always act within the law, providing our clients with only verified and reliable information."
+        },
+        "development": {
+          "title": "Development",
+          "description": "We continuously improve our services and working methods, implementing innovative approaches and technologies to achieve the best results."
+        }
+      },
+      "team": {
+        "title": "Our Team",
+        "subtitle": "Professionals in their field, ready to offer optimal solutions for your business",
+        "director": {
+          "name": "Alexey Ivanov",
+          "position": "General Director",
+          "description": "Over 15 years of experience in accounting and financial consulting. Specializes in strategic planning and business development. Under his leadership, the company successfully serves more than 100 clients from various industries."
+        },
+        "accountant": {
+          "name": "Maria Petrova",
+          "position": "Chief Accountant",
+          "description": "Certified accountant with 10 years of work experience. Expert in taxation and financial planning."
+        },
+        "hr_manager": {
+          "name": "Anna Smirnova",
+          "position": "HR Manager",
+          "description": "Specialist in personnel accounting and HR processes. Provides complete personnel support for clients."
+        }
+      },
+      "cta": {
+        "title": "Ready to start cooperation?",
+        "subtitle": "Contact us today to get a consultation and learn how we can help your business grow and prosper.",
+        "button": "Contact Us"
+      }
+    }
+  }
+}
