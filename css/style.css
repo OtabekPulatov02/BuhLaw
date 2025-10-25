@@ -661,3 +661,26 @@ h1.section-container__h1 {
 p.section-container__p {
     color: white;
 }
+
+.pain-points-grid {
+    display: flex;
+    flex-wrap: wrap;          /* Переносим на новую строку */
+    gap: 2rem;                /* Отступы между карточками */
+    margin-top: 3rem;
+    justify-content: center;  /* Равномерное расположение */
+}
+
+.pain-point-card {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--shadow-light);
+    border-left: 4px solid #ff6b6b;
+    flex: 1 1 calc(50% - 2rem); /* 2 карточки в ряд */
+}
+
+@media (max-width: 768px) {
+    .pain-point-card {
+        flex: 1 1 100%;
+    }
+}
