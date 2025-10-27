@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты | BuhLaw - Юридические и бухгалтерские услуги в Узбекистане</title>
+    <title>Контакты | BuhLaw - Бухгалтерские услуги в Узбекистане</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/language-switcher.js" defer></script>
-    <script src="js/contact-form.js" defer></script>
     <style>
         .contact-grid {
             display: grid;
@@ -310,7 +308,7 @@
                     
                     <div class="contact-form-container">
                         <h3 data-translate="contacts.form.title">Оставить заявку</h3>
-                        <form id="contactForm">
+                        <form id="contactForm" method="post" action="https://formspree.io/f/xvgvgnyp">
                             <div class="form-group">
                                 <label for="name" data-translate="contacts.form.name">Ф.И.О. *</label>
                                 <input type="text" id="name" name="name" required>
@@ -330,7 +328,7 @@
                                 <label for="service" data-translate="contacts.form.service">Выберите услугу *</label>
                                 <select id="service" name="service" required>
                                     <option value="" data-translate="contacts.form.service_options.select">Выберите услугу</option>
-                                    <option value="legal" data-translate="contacts.form.service_options.legal">Юридические услуги</option>
+                                    <!-- <option value="legal" data-translate="contacts.form.service_options.legal">Юридические услуги</option> -->
                                     <option value="accounting" data-translate="contacts.form.service_options.accounting">Бухгалтерские услуги</option>
                                     <option value="consulting" data-translate="contacts.form.service_options.consulting">Консалтинг</option>
                                     <option value="other" data-translate="contacts.form.service_options.other">Другое</option>
@@ -408,7 +406,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>BuhLaw</h4>
-                <p>Профессиональные юридические и бухгалтерские услуги в Узбекистане</p>
+                <p>Профессиональные бухгалтерские услуги в Узбекистане</p>
                 <p>Работаем для вашего успеха</p>
             </div>
             <div class="footer-section">
@@ -435,7 +433,8 @@
             <p>&copy; 2025 BuhLaw. Все права защищены.</p>
         </div>
     </footer>
-
+    <script src="js/language-switcher.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
     <script>
         // Mobile Menu Functionality
         const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
